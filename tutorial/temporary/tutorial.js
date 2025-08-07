@@ -80,8 +80,8 @@ const tutorials = [
                 "code": "const express = require('express');\nconst app = express();\n\napp.get('/', (req, res) => res.send('Hello'));\napp.listen(3000);"
             },
             "django": {
-                "language": "python",
-                "code": "# Already done with runserver — just visit http://127.0.0.1:8000/"
+                "language": "bash",
+                "code": "python3 manage.py runserver"
             }
         }
     },
@@ -388,4 +388,5 @@ backBtn.addEventListener('click', () => {
 });
 
 displayTutorial(currentId);
+
 
