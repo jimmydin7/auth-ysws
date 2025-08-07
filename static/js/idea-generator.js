@@ -1,4 +1,4 @@
-const API_BASE = 'https://authlyapi2.pythonanywhere.com';
+const API_BASE = '/api';
 
 const generateBtn = document.getElementById('generateBtn');
 const ideaContainer = document.getElementById('ideaContainer');
@@ -67,22 +67,15 @@ ideaDisclaimer.hidden = true;
 let currentIdea = null;
 
 async function tryFetchWithFallback(endpoint, options = {}) {
-  const urls = [
-    `https://corsproxy.io/?${API_BASE}${endpoint}`,
-    `https://api.allorigins.win/raw?url=${API_BASE}${endpoint}`, 
-    `https://thingproxy.freeboard.io/fetch/${API_BASE}${endpoint}`
-  ];
-
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, options);
-      if (res.ok) return res;
-      console.warn(`❌ Proxy responded with status ${res.status}: ${url}`);
-    } catch (err) {
-      console.warn(`❌ Failed on ${url}`, err);
-    }
+  const url = `${API_BASE}${endpoint}`;
+  try {
+    const res = await fetch(url, options);
+    if (res.ok) return res;
+    console.warn(`❌ API responded with status ${res.status}: ${url}`);
+  } catch (err) {
+    console.warn(`❌ Failed on ${url}`, err);
   }
-  throw new Error("All proxy attempts failed");
+  throw new Error("API call failed");
 }
 
 async function fetchRandomIdea() {

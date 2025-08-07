@@ -1,7 +1,14 @@
 from flask import Flask, jsonify
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 import random, json, os
 
 app = Flask(__name__)
+limiter = Limiter(
+    app,
+    key_func=get_remote_address,
+    default_limits=["200 per day", "50 per hour"]
+)
 
 IDEAS_FILE = "ideas.json"
 
@@ -19,6 +26,7 @@ def save_ideas(ideas):
 ideas = load_ideas()
 
 @app.route('/random', methods=['GET'])
+@limiter.limit("10 per minute")
 def get_random_idea():
     if not ideas:
         return jsonify({"message": "No more ideas left!"}), 404
@@ -26,6 +34,7 @@ def get_random_idea():
     return jsonify(idea)
 
 @app.route('/delete/<int:idea_id>', methods=['DELETE'])
+@limiter.limit("5 per hour")
 def delete_idea(idea_id):
     global ideas
     idea = next((i for i in ideas if i["id"] == idea_id), None)
