@@ -41,7 +41,7 @@ const tutorials = [
         "code_snippets": {
             "flask": {
                 "language": "python",
-                "code": "from werkzeug.security import generate_password_hash, check_password_hash\nhashed_pw = generate_password_hash('mypassword')\n# Flask salts (adds random characters stored in the database) passwords\n#Use this to check it:\ncheck_password_hash(hashed_pw, 'mypassword')"
+                "code": "from werkzeug.security import generate_password_hash, check_password_hash\nhashed_pw = generate_password_hash('mypassword')\n# Flask salts passwords (adds random characters stored in the database)\n# Use this to check it:\ncheck_password_hash(hashed_pw, 'mypassword')"
             },
             "express": {
                 "language": "javascript",
@@ -49,7 +49,7 @@ const tutorials = [
             },
             "django": {
                 "language": "python",
-                "code": "from django.contrib.auth.hashers import make_password, check_password\nhashed_pw = make_password('mypassword')\n# Django salts (adds random characters stored in the database) passwords\n#Use this to check it:\ncheck_password('mypassword', hashed_pw)"
+                "code": "from django.contrib.auth.hashers import make_password, check_password\nhashed_pw = make_password('mypassword')\n# Django salts passwords (adds random characters stored in the database)\n# Use this to check it:\ncheck_password('mypassword', hashed_pw)"
             }
         },
         "next": 4
@@ -388,4 +388,5 @@ backBtn.addEventListener('click', () => {
 });
 
 displayTutorial(currentId);
+
 
