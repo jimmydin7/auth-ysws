@@ -14,6 +14,13 @@ const authors = {
 };
 const announcementsData = [
   {
+    title: "New Reward!",
+    content: "I am very pleased to say that authly just dropped a sick new reward! The GL.iNet GL-SFT1200 travel router with VPN and OpenWrt is now available for 10 hours! (Yep it's the same one from Summer of Making!)",
+    date: "Aug 12, 2025",
+    importance: "Important",
+    authorId: "akaal"
+  },
+  {
     title: "Authly is live!",
     content: "Hey folks, I am super glad to announce that authly is finally live! It will last until the end of August. You can get rewards from yubikeys, to nfc tags and antivirus software giftcards. You can even get 2 yubikeys for 20 hours of work! For more go into our slack #authly!",
     date: "Aug 5, 2025",
@@ -36,7 +43,7 @@ const announcementsData = [
   },
   {
     title: "How I help in Authly",
-    content: "Hey, my name is Akaal and I have been helping Jim with Authly for a while now.",
+    content: "Hey, my name is Akaalroop and I have been helping Jim with Authly for a while now. I've got nearly 100 commits in the authly repo!",
     date: "Aug 3, 2025",
     importance: "Low",
     authorId: "akaal"
