@@ -15,7 +15,7 @@ const authors = {
 const announcementsData = [
   {
     title: "New Reward!",
-    content: "I am very pleased to say that authly just dropped a sick new reward! The GL.iNet GL-SFT1200 travel router with VPN and OpenWrt is now available for 10 hours! (Yep it's the same one from Summer of Making!)",
+    content: "I am very pleased to say that authly just dropped a sick new reward! The GL.iNet GL-SFT1200 travel router with VPN and OpenWrt is now available for 10 hours! (Yep it's the same one from Summer of Making!). Unfortunately, it's only available in the UK, US, Canada, Europe and Australia :(",
     date: "Aug 12, 2025",
     importance: "Important",
     authorId: "akaal"
