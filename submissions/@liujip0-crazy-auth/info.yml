@@ -1,0 +1,4 @@
+name: @liujip0-crazy-auth
+description: A simple app to let users make posts on a public feed, and privately view a list of their own posts. Authentication is done by having users drag and drop icons to recreate their dock or taskbar arrangements.
+github: https://github.com/liujip0/crazy-auth
+demo: https://liujip0.github.io/crazy-auth/
