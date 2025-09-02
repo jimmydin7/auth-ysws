@@ -117,54 +117,53 @@
 		   target="_blank">
 			Tutorial
 		</a>
-		<a class="bg-hack-yellow text-hack-red px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105" href="blog"
+		<a class="bg-hack-yellow text-hack-red px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105" href="submissions"
 		   target="_blank">
-			Blog
+			Submission Gallery
 		</a>
 	</div>
 </div>
 
 
 <section class="py-20 bg-gray-800" id="challenge">
-	<div class="max-w-7xl mx-auto px-6 text-center">
-		<h2 class="text-4xl md:text-5xl font-black text-white mb-4">
-			<span class="text-gradient-yellow">The Challenge</span>
-		</h2>
-		<p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-			Build an <b>esoteric, unique, or meme-worthy authentication system</b>.<br>
-			Or, create an auth system with a vulnerability and show how to exploit it.<br>
-			<span class="block mt-4 text-hack-yellow font-bold">No boring logins allowed!</span>
-		</p>
-		<ul class="text-left text-lg text-gray-200 max-w-2xl mx-auto space-y-2">
-			<li>• Make it wild, creative, or just plain weird</li>
-			<li>• Bonus: Add a fun twist, meme, or challenge</li>
-			<li>• Document your process and what makes it unique</li>
-			<li>• Make sure your project has some content that would be accessed once logged in. Don't make it too complex, just add some core features + accounts (optional). This could be a habit tracker with a leaderboard or a small post creation app.</li>
-			<li>• (Optional) Add a vulnerability and explain how to break it</li>
-		</ul>
-		<div class="mt-8 text-left max-w-2xl mx-auto">
-			<hr class="border-gray-600 mb-4">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+      <span class="text-gradient-yellow">The Challenge</span>
+    </h2>
+    <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+      Build an <b>esoteric, unique, meme-worthy, and WEIRD authentication system</b>.<br>
+      <span class="block mt-4 text-hack-yellow font-bold">No boring logins allowed!</span>
+    </p>
 
-			<button class="w-full flex items-center justify-between mb-2 focus:outline-none" id="toggleRules">
-				<span class="text-2xl font-bold text-white">Rules</span>
-				<span class="text-white text-2xl transform transition-transform duration-300" id="toggleArrow">▶</span>
-			</button>
+    <ul class="text-left text-lg text-gray-200 max-w-2xl mx-auto space-y-3 mb-8">
+      <li>- Make it wild, creative, or just plain weird</li>
+      <li>- Bonus: Add a fun twist, meme, or challenge</li>
+      <li>- Document your process and what makes it unique</li>
+      <li>- Include content accessible after login (core features + optional accounts). Example: habit tracker with leaderboard or a small post creation app</li>
+    </ul>
 
-			<ul class="list-disc pl-6 text-gray-300 space-y-2 hidden" id="rulesList">
-				<li>No plug-and-play auth tools (like Auth0, Firebase Auth, Supabase, Clerk, etc).</li>
-				<li>Local auth (like saving users in JSON or SQL) = big points!</li>
-				<li>Your app must work for multiple users - not just a demo for one person.</li>
-				<li>No frontend-only stuff. Real users, real accounts.</li>
-				<li>It’s okay to use simple session/cookie tools (like Flask or Express sessions).</li>
-				<li>Write your own code. Be ready to explain your process!</li>
-				<li><b>Your app needs real features & functionality, not just login screens. (Read <a href="#faq" class="hover:text-gray-400">FAQ</a> for more info)</b></li>
-			</ul>
-		</div>
+    <div class="mt-8 text-left max-w-2xl mx-auto">
+      <hr class="border-gray-600 mb-4">
 
+      <button class="w-full flex items-center justify-between mb-2 focus:outline-none" id="toggleRules">
+        <span class="text-2xl font-bold text-white">Rules</span>
+        <span class="text-white text-2xl transform transition-transform duration-300" id="toggleArrow">▶</span>
+      </button>
 
-	</div>
-
+      <ul class="text-gray-300 space-y-2 hidden pl-6 list-none" id="rulesList">
+        <li>- No plug-and-play auth tools (like Auth0, Firebase Auth, Supabase, Clerk, etc.)</li>
+        <li>- Local auth (like saving users in JSON or SQL) = big points!</li>
+        <li>- Your app must work for multiple users - not just a demo for one person</li>
+        <li>- No frontend-only implementations. Real users, real accounts</li>
+        <li>- It’s okay to use simple session/cookie tools (like Flask or Express sessions)</li>
+        <li>- Write your own code. Be ready to explain your process!</li>
+		<li>- Not everyone should be able to login to any account!</li>
+        <li>- <b>Your app needs real features & functionality, not just login screens. (Read <a href="#faq" class="hover:text-gray-400">FAQ</a> for more info)</b></li>
+      </ul>
+    </div>
+  </div>
 </section>
+
 
 <section class="py-20 bg-gray-900 items-center text-center" id="how-it-works">
 	<h2 class="text-4xl md:text-5xl font-black text-white mb-4">
@@ -337,6 +336,7 @@
 	        onclick="window.location.href='https://airtable.com/appLMKxJKjiqcNlSg/pagXLkgh6iPYS2hpD/form'">
 		Submit Your Project
 	</button>
+	<h3 class="text-gray-400 mt-8 font-bold">Check our submission gallery <a href="/submissions" class="underline text-gray-400">here</a></h3>
 
 
 </section>

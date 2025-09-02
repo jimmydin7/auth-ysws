@@ -126,5 +126,6 @@ Here is the live demo: [Demo]( https://jimdiet.pythonanywhere.com/)
 ---
 
 > Built with ❤️ by **Jim Dinias**  
+> Sponsored by **Graham**
 > Mentored by POC, **Kate Caulfield**  
-> Helped by **Akaalroop Singh** (Spacexplorer11)  
+> Helped by **Alex** and **Akaalroop Singh** (Spacexplorer11)  

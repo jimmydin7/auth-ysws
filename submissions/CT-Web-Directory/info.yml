@@ -1,0 +1,4 @@
+name: CT Web Directory
+description: A web directory using Certificate Transparency for login
+github: https://github.com/twonfi/authly-web-directory
+demo: https://authly.twonum.hackclub.app
