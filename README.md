@@ -90,9 +90,6 @@ Join the [#authly](https://hackclub.slack.com/archives/authly) channel on the Ha
 Check out the [blog](https://authly.hackclub.com/blog) for more information about the program, tutorials, and more!  
 It also will have important announcements and updates about the program.
 
-## Track our progress
-You, as a participant, can track **our** progress on reviewing **your** projects [here!](https://authly.hackclub.com/track/)
-
 ## Tech-Stack
 
 Simple static website with:
