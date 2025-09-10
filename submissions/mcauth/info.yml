@@ -1,0 +1,4 @@
+name: mcauth
+description: "Login securely using nothing but a Minecraft build! Theoretically has more entropy than a standard password..."
+github: https://github.com/BirdRoad1/mcauth-plugin
+demo: https://mcauth.jlmsz.com
