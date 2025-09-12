@@ -1,0 +1,4 @@
+name: QRAuth
+description: A weird authentication system that has the user scan QR codes instead of entering a password.
+github: https://github.com/UnstoppableBlob/authly-proj
+demo: https://unstoppableblob.github.io/authly-proj/
